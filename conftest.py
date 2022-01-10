@@ -8,7 +8,7 @@ def browser():
     options = Options()
     options.add_argument("--lang=en")
     print("\nstart browser for test..")
-    browser = webdriver.Chrome(chrome_options=options)
+    browser = webdriver.Chrome(options=options)
     yield browser
     print("\nquit browser..")
     browser.quit()
